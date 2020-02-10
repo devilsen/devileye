@@ -8,6 +8,7 @@ import me.devilsen.devileye.code.BarcodeFormat;
 import me.devilsen.devileye.code.BarcodeReader;
 import me.devilsen.devileye.code.CodeResult;
 import me.devilsen.devileye.util.BarCodeUtil;
+import me.devilsen.devileye.util.SaveImageUtil;
 
 /**
  * @author : dongSen
@@ -35,7 +36,7 @@ public class ScanView extends BarCoderView implements ScanBoxView.ScanBoxClickLi
     private boolean isStop;
     private boolean isDark;
     private int showCounter;
-//    private BarcodeReader reader;
+    //    private BarcodeReader reader;
     private ScanListener.AnalysisBrightnessListener brightnessListener;
 
     public ScanView(Context context) {
@@ -59,7 +60,8 @@ public class ScanView extends BarCoderView implements ScanBoxView.ScanBoxClickLi
         }
 
 //        reader.read(data, left, top, width, height, rowWidth, rowHeight);
-//        SaveImageUtil.saveData(data, left, top, width, height, rowWidth);
+        SaveImageUtil.saveData(data, left, top, width, height, rowWidth, rowHeight);
+        stopScan();
     }
 
     /**
@@ -158,4 +160,10 @@ public class ScanView extends BarCoderView implements ScanBoxView.ScanBoxClickLi
         mCameraSurface.toggleFlashLight(isDark);
     }
 
+    /**
+     * 拍照（保存一帧）
+     */
+    public void takePhoto() {
+        startScan();
+    }
 }

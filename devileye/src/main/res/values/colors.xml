@@ -12,7 +12,7 @@
     <color name="czxing_line_corner">#05C705</color>
 
     <!-- 文字颜色 -->
-    <color name="czxing_text_normal">#F8F8F8</color>
+    <color name="czxing_text_normal">#C0BFBF</color>
     <color name="czxing_text_big">#BC0ED118</color>
 
     <!-- 扫描线的渐变颜色 -->

@@ -28,6 +28,7 @@ import me.devilsen.devileye.compat.ActivityCompat;
 import me.devilsen.devileye.compat.ContextCompat;
 import me.devilsen.devileye.util.BarCodeUtil;
 import me.devilsen.devileye.util.BitmapUtil;
+import me.devilsen.devileye.util.SaveImageUtil;
 import me.devilsen.devileye.util.ScreenUtil;
 import me.devilsen.devileye.util.SoundPoolUtil;
 import me.devilsen.devileye.view.ScanBoxView;
@@ -63,12 +64,10 @@ public class CustomizeActivity extends AppCompatActivity implements View.OnClick
 
         LinearLayout titleLayout = findViewById(R.id.layout_customize_scan_title);
         ImageView backImg = findViewById(R.id.image_customize_scan_back);
-        TextView albumTxt = findViewById(R.id.text_view_customize_scan_album);
         mScanView = findViewById(R.id.surface_customize_view_scan);
-        TextView myCodeTxt = findViewById(R.id.text_view_customize_my_qr_code);
-        TextView option1Txt = findViewById(R.id.text_view_customize_option_1);
-        TextView option2Txt = findViewById(R.id.text_view_customize_option_2);
-        TextView option3Txt = findViewById(R.id.text_view_customize_option_3);
+        mScanView.setScanMode(ScanView.SCAN_MODE_TINY);
+
+        ImageView option2Txt = findViewById(R.id.text_view_customize_option_2);
 
         // 设置扫描模式
 //        mScanView.setScanMode(ScanView.SCAN_MODE_MIX);
@@ -77,21 +76,23 @@ public class CustomizeActivity extends AppCompatActivity implements View.OnClick
 
         ScanBoxView scanBox = mScanView.getScanBox();
         // 设置扫码框上下偏移量，可以为负数
-        scanBox.setBoxTopOffset(-BarCodeUtil.dp2px(this, 100));
+        scanBox.setBoxTopOffset(BarCodeUtil.dp2px(this, 5));
         // 设置边框大小
-        scanBox.setBorderSize(BarCodeUtil.dp2px(this, 200), BarCodeUtil.dp2px(this, 100));
+        scanBox.setBorderSize(BarCodeUtil.dp2px(this, 300), BarCodeUtil.dp2px(this, 100));
         // 设置扫码框四周的颜色
-        scanBox.setMaskColor(Color.parseColor("#9C272626"));
+//        scanBox.setMaskColor(Color.WHITE);
         // 设定四个角的颜色
-//        scanBox.setCornerColor();
+        scanBox.setCornerColor(Color.WHITE);
         // 设定扫描框的边框颜色
-//        scanBox.setBorderColor();
+        scanBox.setBorderColor(Color.WHITE);
+        // 隐藏扫描线
+        scanBox.hideScanLine();
         // 设置边框长度(扫码框大小)
 //        scanBox.setBorderSize();
         // 设定扫描线的颜色
 //        scanBox.setScanLineColor();
         // 设置扫码线移动方向为水平（从左往右）
-        scanBox.setHorizontalScanLine();
+//        scanBox.setHorizontalScanLine();
         // 设置手电筒打开时的图标
 //        scanBox.setFlashLightOnDrawable();
         // 设置手电筒关闭时的图标
@@ -103,18 +104,14 @@ public class CustomizeActivity extends AppCompatActivity implements View.OnClick
         // 不使用手电筒图标及提示
 //        scanBox.invisibleFlashLightIcon();
         // 设置扫码框下方的提示文字
-//        scanBox.setScanNoticeText();
+        scanBox.setScanNoticeText(getString(R.string.devil_eye_take_picture));
 
         backImg.setOnClickListener(this);
-        albumTxt.setOnClickListener(this);
         // 获取扫码回调
         mScanView.setScanListener(this);
         // 获取亮度测量结果
         mScanView.setAnalysisBrightnessListener(this);
-        myCodeTxt.setOnClickListener(this);
-        option1Txt.setOnClickListener(this);
         option2Txt.setOnClickListener(this);
-        option3Txt.setOnClickListener(this);
 
         RelativeLayout.LayoutParams layoutParams = (RelativeLayout.LayoutParams) titleLayout.getLayoutParams();
         layoutParams.topMargin = ScreenUtil.getStatusBarHeight(this);
@@ -123,13 +120,14 @@ public class CustomizeActivity extends AppCompatActivity implements View.OnClick
         mSoundPoolUtil.loadDefault(this);
 
         requestCameraPermission();
+        requestStoragePermission();
     }
 
     @Override
     protected void onResume() {
         super.onResume();
         mScanView.openCamera(); // 打开后置摄像头开始预览，但是并未开始识别
-        mScanView.startScan();  // 显示扫描框，并开始识别
+//        mScanView.startScan();  // 显示扫描框，并开始识别
     }
 
     @Override
@@ -153,20 +151,9 @@ public class CustomizeActivity extends AppCompatActivity implements View.OnClick
             case R.id.image_customize_scan_back:
                 finish();
                 break;
-            case R.id.text_view_customize_scan_album:
-                requestStoragePermission();
-                break;
-            case R.id.text_view_customize_my_qr_code:
-                startActivity(new Intent(this, MyCardActivity.class));
-                break;
-            case R.id.text_view_customize_option_1:
-                Toast.makeText(this, "option 1", Toast.LENGTH_SHORT).show();
-                break;
             case R.id.text_view_customize_option_2:
                 Toast.makeText(this, "option 2", Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.text_view_customize_option_3:
-                Toast.makeText(this, "option 3", Toast.LENGTH_SHORT).show();
+                mScanView.takePhoto();
                 break;
         }
     }
@@ -261,9 +248,6 @@ public class CustomizeActivity extends AppCompatActivity implements View.OnClick
             ActivityCompat.requestPermissions(this,
                     new String[]{Manifest.permission.READ_EXTERNAL_STORAGE},
                     PERMISSIONS_REQUEST_STORAGE);
-        } else {
-            Intent albumIntent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-            startActivityForResult(albumIntent, CODE_SELECT_IMAGE);
         }
     }
 

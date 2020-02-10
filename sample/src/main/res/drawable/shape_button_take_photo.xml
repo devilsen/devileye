@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true">
+        <layer-list>
+
+            <item>
+                <shape android:innerRadiusRatio="3" android:shape="ring" android:thicknessRatio="14" android:useLevel="false">
+                    <size android:width="80dp" android:height="80dp" />
+                    <solid android:color="@color/scan_button_take_photo" />
+                </shape>
+            </item>
+
+            <item android:bottom="16dp" android:left="16dp" android:right="16dp" android:top="16dp">
+                <shape android:shape="oval">
+                    <size android:width="60dp" android:height="60dp" />
+                    <solid android:color="@color/scan_button_take_photo_pressed" />
+                </shape>
+            </item>
+
+        </layer-list>
+    </item>
+
+    <item>
+        <layer-list>
+
+            <item>
+                <shape android:innerRadiusRatio="3" android:shape="ring" android:thicknessRatio="14" android:useLevel="false">
+                    <size android:width="80dp" android:height="80dp" />
+                    <solid android:color="@color/scan_button_take_photo" />
+                </shape>
+            </item>
+
+            <item android:bottom="16dp" android:left="16dp" android:right="16dp" android:top="16dp">
+                <shape android:shape="oval">
+                    <size android:width="60dp" android:height="60dp" />
+                    <solid android:color="@color/scan_button_take_photo" />
+                </shape>
+            </item>
+
+        </layer-list>
+    </item>
+</selector>

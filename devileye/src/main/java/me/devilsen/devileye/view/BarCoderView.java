@@ -114,14 +114,15 @@ abstract class BarCoderView extends FrameLayout implements Camera.PreviewCallbac
                 top = scanBoxRect.left;
             } else {
                 left = scanBoxRect.left;
-                top = scanBoxRect.top;
+                top = scanBoxRect.top - expandTop;
             }
 
             resolutionAdapter.setCameraSize(portrait, rowWidth, rowHeight);
             left = resolutionAdapter.getAdapterWidth(left);
             top = resolutionAdapter.getAdapterHeight(top);
-            scanBoxSize = resolutionAdapter.getAdapterWidth(scanBoxSize);
-            scanDataStrategy(data, left, top, scanBoxSize, scanBoxSize, rowWidth, rowHeight);
+            int scanBoxWidth = resolutionAdapter.getAdapterWidth(mScanBoxView.getScanBoxWidth());
+            int scanBoxHeight = resolutionAdapter.getAdapterWidth(mScanBoxView.getScanBoxHeight());
+            scanDataStrategy(data, left, top, scanBoxWidth, scanBoxHeight, rowWidth, rowHeight);
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">DevilEye</string>
+    <string name="devil_eye_take_picture">请点击右侧按钮进行拍照</string>
+    <string name="devil_eye_notice">将框置于VIP码前</string>
 </resources>

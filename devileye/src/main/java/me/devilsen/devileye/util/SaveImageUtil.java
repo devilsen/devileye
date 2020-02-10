@@ -21,31 +21,25 @@ import java.io.IOException;
  */
 public class SaveImageUtil {
 
-    public static void saveData(byte[] data, int left, int top, int width, int height, int rowWidth) {
-        if (System.currentTimeMillis() - time < 5000) {
+    public static void saveData(byte[] data, int left, int top, int width, int height, int rowWidth, int rowHeight) {
+        if (System.currentTimeMillis() - time < 1000) {
             return;
         }
         time = System.currentTimeMillis();
 
-//        left -= 120;
-
         Log.e("save >>> ", "left = " + left + " top= " + top +
                 " width=" + width + " height= " + height + " row=" + rowWidth);
 
-        int[] rgba = applyGrayScaleRotate(data, left, top, width, height, rowWidth);
-//        int[] rgbaRotate = rotate(rgba, width, height, width);
-
-//        Bitmap bmp = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
-//        bmp.setPixels(rgba, 0, width, 0, 0, width, height);
-        // 当长宽不一样时，要注意图像的正反
-        Bitmap bmp = Bitmap.createBitmap(height, width, Bitmap.Config.ARGB_8888);
-        bmp.setPixels(rgba, 0, height, 0, 0, height, width);
-        saveImage(bmp);
+//        int[] rgba = applyGrayScaleRotate(data, left, top, width, height, rowWidth);
+//        // 这里已经翻转了，当长宽不一样时，要注意图像的正反
+//        Bitmap bmp = Bitmap.createBitmap(height, width, Bitmap.Config.ARGB_8888);
+//        bmp.setPixels(rgba, 0, height, 0, 0, height, width);
+//        saveImage(bmp);
 
 //        bmp = getBinaryzationBitmap(bmp);
-//        Bitmap bmp = rawByteArray2RGBABitmap2(data, rowWidth, width);
-
-//        saveImage(bmp);
+//        Bitmap bmp = rawByteArray2RGBABitmap(data, rowWidth, rowHeight);
+        Bitmap bmp = rawByteArray2RGBABitmap2(data, left, top, width, height, rowWidth, rowHeight);
+        saveImage(bmp);
 
         bmp.recycle();
     }
@@ -164,16 +158,20 @@ public class SaveImageUtil {
         return bmp;
     }
 
-    public static Bitmap rawByteArray2RGBABitmap2(byte[] data, int width, int height) {
+    /**
+     * 保存图像
+     * 如果所有的参数都设置正确，是可以保存彩色图像的
+     */
+    public static Bitmap rawByteArray2RGBABitmap2(byte[] data, int left, int top, int width, int height, int rowWidth, int rowHeight) {
         Bitmap bmp = null;
         try {
-            YuvImage image = new YuvImage(data, ImageFormat.NV21, width, height, null);
+            YuvImage image = new YuvImage(data, ImageFormat.NV21, rowWidth, rowHeight, null);
             ByteArrayOutputStream stream = new ByteArrayOutputStream();
-            image.compressToJpeg(new Rect(0, 0, width, height), 80, stream);
+            image.compressToJpeg(new Rect(left, top, left + width, top + height), 80, stream);
             bmp = BitmapFactory.decodeByteArray(stream.toByteArray(), 0, stream.size());
             stream.close();
-        } catch (Exception ex) {
-            Log.e("Sys", "Error:" + ex.getMessage());
+        } catch (Exception e) {
+            e.printStackTrace();
         }
         return bmp;
     }
@@ -200,7 +198,7 @@ public class SaveImageUtil {
             if (bitmap.compress(Bitmap.CompressFormat.JPEG, 80, out)) {
                 out.flush();
                 out.close();
-                Log.e("save >>> ", "save image success");
+                Log.d("save >>> ", "save image success");
             }
         } catch (Exception e) {
             e.printStackTrace();

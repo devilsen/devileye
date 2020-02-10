@@ -14,5 +14,8 @@
     <color name="scan_side">#2A017CB4</color>
     <color name="scan_partial">#B20493D5</color>
     <color name="scan_middle">#00AFFF</color>
+    <color name="scan_button_take_photo">#D8D8D8</color>
+    <color name="scan_button_take_photo_pressed">#B9919090</color>
+    <color name="devil_eye_text_notice">#C0BFBF</color>
 
 </resources>

@@ -92,6 +92,7 @@ public class ScanBoxView extends View {
     private String mFlashLightOnText;
     private String mFlashLightOffText;
     private String mScanNoticeText;
+    private boolean mHideScanLine;
 
     public ScanBoxView(Context context) {
         this(context, null);
@@ -169,12 +170,11 @@ public class ScanBoxView extends View {
         // 画四个直角的线
         drawCornerLine(canvas);
 
-        // 画扫描线
-        drawScanLine(canvas);
-
         // 画提示文本
         drawTipText(canvas);
 
+        // 画扫描线
+        drawScanLine(canvas);
         // 移动扫描线的位置
         moveScanLine();
 
@@ -315,6 +315,10 @@ public class ScanBoxView extends View {
      * 画扫描线
      */
     private void drawScanLine(Canvas canvas) {
+        if (mHideScanLine) {
+            return;
+        }
+
         if (mScanLineGradient == null) {
             // 生成垂直方向的扫码线（从上往下）
             if (mScanlineOrientation == VERTICAL) {
@@ -449,6 +453,10 @@ public class ScanBoxView extends View {
     }
 
     private void moveScanLine() {
+        if (mHideScanLine) {
+            return;
+        }
+
         if (mScanLineAnimator != null && mScanLineAnimator.isRunning()) {
             return;
         }
@@ -498,6 +506,20 @@ public class ScanBoxView extends View {
      */
     public int getScanBoxSizeExpand() {
         return mBoxSize + mBoxSizeOffset;
+    }
+
+    /**
+     * 获取扫码框高度，有的手机得到的数据会有所偏移（如：华为P20），这里放大了获取到的数据
+     */
+    public int getScanBoxHeight() {
+        return mBoxHeight + mBoxSizeOffset;
+    }
+
+    /**
+     * 获取扫码框宽度
+     */
+    public int getScanBoxWidth() {
+        return mBoxWidth;
     }
 
     /**
@@ -692,6 +714,10 @@ public class ScanBoxView extends View {
         if (mScanLineAnimator != null) {
             mScanLineAnimator.removeAllUpdateListeners();
         }
+    }
+
+    public void hideScanLine() {
+        mHideScanLine = true;
     }
 
     public interface ScanBoxClickListener {

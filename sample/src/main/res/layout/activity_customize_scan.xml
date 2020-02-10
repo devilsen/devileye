@@ -8,6 +8,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/devil_eye_notice"
+        android:textColor="@color/devil_eye_text_notice" />
+
     <LinearLayout
         android:id="@+id/layout_customize_scan_title"
         android:layout_width="match_parent"
@@ -36,72 +43,18 @@
             android:textColor="@android:color/white"
             android:textSize="18sp" />
 
-        <TextView
-            android:id="@+id/text_view_customize_scan_album"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:background="@drawable/background_touch_view"
-            android:gravity="center"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:text="@string/album"
-            android:textColor="@android:color/white"
-            android:textSize="18sp" />
-
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/text_view_customize_my_qr_code"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="450dp"
-        android:background="?attr/selectableItemBackground"
-        android:text="我的二维码"
-        android:textColor="@color/colorAccent"
-        android:textSize="18sp" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_alignParentBottom="true">
-
-        <TextView
-            android:id="@+id/text_view_customize_option_1"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="?attr/selectableItemBackground"
-            android:drawableTop="@drawable/ic_toys_black_24dp"
-            android:gravity="center"
-            android:padding="15dp"
-            android:text="option_1"
-            android:textColor="@color/text_white" />
-
-        <TextView
-            android:id="@+id/text_view_customize_option_2"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="?attr/selectableItemBackground"
-            android:drawableTop="@drawable/ic_spa_black_24dp"
-            android:gravity="center"
-            android:padding="15dp"
-            android:text="option_2"
-            android:textColor="@color/text_white" />
-
-        <TextView
-            android:id="@+id/text_view_customize_option_3"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="?attr/selectableItemBackground"
-            android:drawableTop="@drawable/ic_whatshot_black_24dp"
-            android:gravity="center"
-            android:padding="15dp"
-            android:text="option_3"
-            android:textColor="@color/text_white" />
-
-    </LinearLayout>
+    <ImageView
+        android:id="@+id/text_view_customize_option_2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/shape_button_take_photo"
+        android:gravity="center"
+        android:padding="15dp" />
 
 </RelativeLayout>
