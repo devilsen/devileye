@@ -1,0 +1,21 @@
+{
+  "buildFiles": [
+    "/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/src/main/cpp/CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "/Users/Devilsen/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/.cxx/cmake/release/armeabi-v7a --target clean"
+  ],
+  "libraries": {
+    "devileye-Release-armeabi-v7a": {
+      "artifactName": "devileye",
+      "buildCommand": "/Users/Devilsen/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/.cxx/cmake/release/armeabi-v7a --target devileye",
+      "abi": "armeabi-v7a",
+      "output": "/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/build/intermediates/cmake/release/obj/armeabi-v7a/libdevileye.so"
+    },
+    "opencv_java4-Release-armeabi-v7a": {
+      "artifactName": "opencv_java4",
+      "abi": "armeabi-v7a",
+      "output": "/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/src/main/cpp/../../../libs/armeabi-v7a/libopencv_java4.so"
+    }
+  }
+}

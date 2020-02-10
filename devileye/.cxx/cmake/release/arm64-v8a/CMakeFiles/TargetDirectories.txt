@@ -1,0 +1,3 @@
+/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/.cxx/cmake/release/arm64-v8a/CMakeFiles/edit_cache.dir
+/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/.cxx/cmake/release/arm64-v8a/CMakeFiles/rebuild_cache.dir
+/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/.cxx/cmake/release/arm64-v8a/CMakeFiles/devileye.dir

@@ -1,0 +1,68 @@
+{
+  "variant": {
+    "module": {
+      "rootBuildGradleFolder": "/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye",
+      "sdkFolder": "/Users/Devilsen/Library/Android/sdk",
+      "isNativeCompilerSettingsCacheEnabled": false,
+      "isBuildOnlyTargetAbiEnabled": true,
+      "splitsAbiFilterSet": [],
+      "intermediatesFolder": "/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/build/intermediates",
+      "gradleModulePathName": ":devileye",
+      "moduleRootFolder": "/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye",
+      "makeFile": "/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/src/main/cpp/CMakeLists.txt",
+      "buildSystem": "CMAKE",
+      "compilerSettingsCacheFolder": "/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/.cxx",
+      "cxxFolder": "/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/.cxx",
+      "ndkFolder": "/Users/Devilsen/Library/Android/sdk/ndk/20.0.5594570",
+      "ndkVersion": "20.0.5594570",
+      "ndkSupportedAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "cmakeToolchainFile": "."
+    },
+    "buildSystemArgumentList": [],
+    "cFlagList": [],
+    "cppFlagsList": [],
+    "variantName": "debug",
+    "soFolder": "/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/build/intermediates/cmake/debug/lib",
+    "objFolder": "/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/build/intermediates/cmake/debug/obj",
+    "jsonFolder": "/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/.cxx/cmake/debug",
+    "gradleBuildOutputFolder": "/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/.cxx/cxx/debug",
+    "isDebuggableEnabled": true,
+    "validAbiList": [
+      "ARMEABI_V7A",
+      "ARM64_V8A"
+    ],
+    "buildTargetSet": []
+  },
+  "abi": "ARMEABI_V7A",
+  "abiPlatformVersion": 16,
+  "cxxBuildFolder": "/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/.cxx/cmake/debug/armeabi-v7a",
+  "jsonFile": "/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/.cxx/cmake/debug/armeabi-v7a/android_gradle_build.json",
+  "gradleBuildOutputFolder": "/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/.cxx/cxx/debug/armeabi-v7a",
+  "objFolder": "/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/build/intermediates/cmake/debug/obj/armeabi-v7a",
+  "buildCommandFile": "/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/.cxx/cmake/debug/armeabi-v7a/build_command.txt",
+  "buildOutputFile": "/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/.cxx/cmake/debug/armeabi-v7a/build_output.txt",
+  "modelOutputFile": "/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/.cxx/cmake/debug/armeabi-v7a/build_model.json",
+  "cmake": {
+    "cmakeListsWrapperFile": "/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/.cxx/cxx/debug/armeabi-v7a/CMakeLists.txt",
+    "toolchainWrapperFile": "/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/.cxx/cxx/debug/armeabi-v7a/android_gradle_build.toolchain.cmake",
+    "buildGenerationStateFile": "/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/.cxx/cxx/debug/armeabi-v7a/build_generation_state.json",
+    "cacheKeyFile": "/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/.cxx/cxx/debug/armeabi-v7a/compiler_cache_key.json",
+    "compilerCacheUseFile": "/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/.cxx/cxx/debug/armeabi-v7a/compiler_cache_use.json",
+    "compilerCacheWriteFile": "/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/.cxx/cxx/debug/armeabi-v7a/compiler_cache_write.json",
+    "toolchainSettingsFromCacheFile": "/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/.cxx/cxx/debug/armeabi-v7a/compiler_settings_cache.cmake",
+    "cmakeWrappingBaseFolder": "."
+  },
+  "jsonGenerationLoggingRecordFile": "/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/.cxx/cmake/debug/armeabi-v7a/json_generation_record.json",
+  "compileCommandsJsonFile": "/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/.cxx/cmake/debug/armeabi-v7a/compile_commands.json"
+}

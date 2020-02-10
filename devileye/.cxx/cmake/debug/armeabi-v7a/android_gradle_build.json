@@ -1,0 +1,109 @@
+
+{
+	"buildFiles" : 
+	[
+		"/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/src/main/cpp/CMakeLists.txt"
+	],
+	"cleanCommands" : 
+	[
+		"/Users/Devilsen/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/.cxx/cmake/debug/armeabi-v7a --target clean"
+	],
+	"cppFileExtensions" : [ "cpp" ],
+	"libraries" : 
+	{
+		"devileye-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "devileye",
+			"buildCommand" : "/Users/Devilsen/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/.cxx/cmake/debug/armeabi-v7a --target devileye",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/Devilsen/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/Devilsen/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -Ddevileye_EXPORTS -I/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/src/main/cpp/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/src/main/cpp/ImageScheduler.cpp",
+					"workingDirectory" : "/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/Devilsen/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/Devilsen/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -Ddevileye_EXPORTS -I/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/src/main/cpp/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/src/main/cpp/JNIUtils.cpp",
+					"workingDirectory" : "/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/Devilsen/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/Devilsen/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -Ddevileye_EXPORTS -I/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/src/main/cpp/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/src/main/cpp/JavaCallHelper.cpp",
+					"workingDirectory" : "/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/Devilsen/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/Devilsen/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -Ddevileye_EXPORTS -I/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/src/main/cpp/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/src/main/cpp/QRCodeRecognizer.cpp",
+					"workingDirectory" : "/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/Devilsen/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/Devilsen/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -Ddevileye_EXPORTS -I/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/src/main/cpp/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/src/main/cpp/erfilter.cpp",
+					"workingDirectory" : "/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/Devilsen/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/Devilsen/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -Ddevileye_EXPORTS -I/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/src/main/cpp/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/src/main/cpp/native-lib.cpp",
+					"workingDirectory" : "/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/Devilsen/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/Devilsen/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -Ddevileye_EXPORTS -I/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/src/main/cpp/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/src/main/cpp/ocr_beamsearch_decoder.cpp",
+					"workingDirectory" : "/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/Devilsen/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/Devilsen/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -Ddevileye_EXPORTS -I/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/src/main/cpp/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/src/main/cpp/ocr_hmm_decoder.cpp",
+					"workingDirectory" : "/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/Devilsen/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/Devilsen/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -Ddevileye_EXPORTS -I/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/src/main/cpp/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/src/main/cpp/ocr_holistic.cpp",
+					"workingDirectory" : "/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/Devilsen/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/Devilsen/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -Ddevileye_EXPORTS -I/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/src/main/cpp/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/src/main/cpp/ocr_tesseract.cpp",
+					"workingDirectory" : "/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/Devilsen/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/Devilsen/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -Ddevileye_EXPORTS -I/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/src/main/cpp/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/src/main/cpp/text_detectorCNN.cpp",
+					"workingDirectory" : "/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/.cxx/cmake/debug/armeabi-v7a"
+				}
+			],
+			"output" : "/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/build/intermediates/cmake/debug/obj/armeabi-v7a/libdevileye.so",
+			"toolchain" : "3946275621384725162"
+		},
+		"opencv_java4-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "opencv_java4",
+			"buildType" : "debug",
+			"output" : "/Users/Devilsen/Documents/GitHub/Android/Me/OCR/DevilEye/devileye/src/main/cpp/../../../libs/armeabi-v7a/libopencv_java4.so",
+			"toolchain" : "3946275621384725162"
+		}
+	},
+	"toolchains" : 
+	{
+		"3946275621384725162" : 
+		{
+			"cCompilerExecutable" : "/Users/Devilsen/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang",
+			"cppCompilerExecutable" : "/Users/Devilsen/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++"
+		}
+	}
+}
